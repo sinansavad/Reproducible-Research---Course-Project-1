@@ -1,0 +1,5 @@
+avg_steps<-aggregate(data$steps,by=list(data$interval),FUN=mean,na.rm=TRUE)
+
+colnames(avg_steps)<-c("interval","steps")
+
+library(ggplot2)
